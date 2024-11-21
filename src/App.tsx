@@ -9,7 +9,7 @@ function App() {
 
   const {
     contract_address, counter_value,
-    recent_sender,
+    // recent_sender,
     owner_address,
     contract_balance,
     sendIncrement,
@@ -41,7 +41,7 @@ function App() {
 
           <hr />
           <b>Our contract Balance:</b>
-          <div className='Hint'>{fromNano(contract_balance)} TON</div>
+          <div className='Hint'>{fromNano(contract_balance as number)} TON</div>
         </div>
 
         <div className='Card'>
